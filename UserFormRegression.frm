@@ -21,7 +21,7 @@ Private Sub ToggleButtonRegression_Enter()
     Dim i As Integer
     
     Worksheets(1).Range(Worksheets(1).Cells(1, Int(TextBoxY.Value)), Worksheets(1).Cells(1, Int(TextBoxY.Value)).End(xlDown)).Copy
-    newSheet.Cells(1, Int(TextBoxY.Value) + 10).PasteSpecial
+    newSheet.Cells(1, 11).PasteSpecial
     
     xs = Split(TextBoxXs.Value, ",")
     
